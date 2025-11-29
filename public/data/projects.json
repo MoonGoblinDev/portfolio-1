@@ -1,0 +1,321 @@
+[
+  {
+    "title": "Project Ingest",
+    "category": "App",
+    "description": "Compiles project text into an LLM-friendly format for easier context reading.",
+    "fullDescription": "Project Ingest solves the headache of feeding codebase context to Large Language Models. It recursively scans your directory, respecting .gitignore rules, and aggregates code files into a single, formatted text output. This allows developers to quickly copy their entire project context into ChatGPT or Claude for better code analysis and debugging.",
+    "features": [
+      "Respects .gitignore automatically",
+      "Customizable file extension filtering",
+      "One-click copy to clipboard",
+      "Token count estimation",
+      "Native macOS performance"
+    ],
+    "role": "Solo Developer",
+    "year": "2023",
+    "tags": [
+      "macOS",
+      "Swift",
+      "LLM Tool"
+    ],
+    "status": "Released on App Store",
+    "appLogo": "/assets/project-ingest/logo.png",
+    "iconColor": "text-emerald-400",
+    "accentColor": "#ad8bff",
+    "link": "#",
+    "cardImage": "/assets/project-ingest/1.webp",
+    "bannerImage": "/assets/project-ingest/1.webp",
+    "gallery": [
+      "/assets/project-ingest/1.webp",
+      "/assets/project-ingest/2.webp",
+      "/assets/project-ingest/3.webp"
+    ]
+  },
+  {
+    "title": "Trawl",
+    "category": "App",
+    "description": "Fishing companion app. Forecasts conditions, logs catches to your aquarium, and shares with friends.",
+    "fullDescription": "Trawl is the ultimate companion for the modern angler. By combining real-time weather data with solunar theory, it predicts the best fishing times for your specific location. Beyond forecasting, Trawl acts as a digital logbook, allowing you to capture photos of your catch, record species data, and visualize your fishing history in a beautiful virtual aquarium.",
+    "features": [
+      "Solunar fishing forecasts",
+      "Real-time weather & tide data",
+      "Virtual Aquarium catch log",
+      "Social sharing features",
+      "Offline mode support"
+    ],
+    "role": "Lead Engineer",
+    "team": [
+      {
+        "name": "Bregas S.",
+        "role": "Lead Engineer"
+      },
+      {
+        "name": "Alex Riviera",
+        "role": "UI/UX Designer"
+      },
+      {
+        "name": "Sarah Chen",
+        "role": "Backend Dev"
+      }
+    ],
+    "year": "2024",
+    "tags": [
+      "iOS",
+      "CoreLocation",
+      "Social"
+    ],
+    "status": "Released on App Store",
+    "appLogo": "/assets/trawl/logo.png",
+    "accentColor": "#2afff5",
+    "iconColor": "text-blue-400",
+    "link": "#",
+    "cardImage": "/assets/trawl/banner.png",
+    "bannerImage": "/assets/trawl/banner.png",
+    "gallery": [
+      "/assets/trawl/4.png",
+      "/assets/trawl/1.png",
+      "/assets/trawl/2.png",
+      "/assets/trawl/3.png"
+    ]
+  },
+  {
+    "title": "Nada",
+    "category": "App",
+    "description": "Rapid music composing. Hum a melody and instantly convert your voice into MIDI notes.",
+    "fullDescription": "Nada lowers the barrier to music production by turning your voice into a MIDI controller. Using advanced audio processing, it analyzes the pitch and rhythm of your humming in real-time and converts it into MIDI data that can be exported to any DAW (Digital Audio Workstation). It's the perfect tool for capturing musical ideas on the fly.",
+    "features": [
+      "Real-time Audio-to-MIDI conversion",
+      "Pitch correction & quantization",
+      "Export to Ableton/Logic Pro",
+      "Low latency processing",
+      "Clean, minimal interface"
+    ],
+    "role": "Coder",
+    "team": [
+      {
+        "name": "Bregas S.",
+        "role": "Coder"
+      },
+      {
+        "name": "Reza Juliandri",
+        "role": "Coder"
+      },
+      {
+        "name": "Sri Mustika",
+        "role": "UI/UX Designer"
+      },
+      {
+        "name": "Erwin",
+        "role": "Project Manager"
+      }
+    ],
+    "year": "2025",
+    "tags": [
+      "iOS",
+      "Audio AI",
+      "Music"
+    ],
+    "status": "Released on App Store",
+    "appLogo": "/assets/nada/logo.png",
+    "accentColor": "#ef4a23",
+    "iconColor": "text-purple-400",
+    "link": "#",
+    "cardImage": "/assets/nada/banner.png",
+    "bannerImage": "/assets/nada/banner.png",
+    "gallery": [
+      "/assets/nada/1.png",
+      "/assets/nada/2.png",
+      "/assets/nada/3.png",
+      "/assets/nada/4.png"
+    ]
+  },
+  {
+    "title": "Selecta",
+    "category": "App",
+    "description": "A comprehensive iPadOS DJ simulation app for professional mixing on the go.",
+    "fullDescription": "Selecta brings the professional DJ booth to the iPad. Built with a custom low-latency audio engine, it offers precise control over EQ, filters, and tempo. The touch interface is optimized for multi-touch gestures, allowing for scratching, looping, and smooth transitions between tracks. It supports library integration with local files and cloud services.",
+    "features": [
+      "Dual deck simulation",
+      "Custom DSP Audio Engine",
+      "Waveform visualization",
+      "BPM detection & Sync",
+      "MIDI controller support"
+    ],
+    "role": "Developer",
+    "year": "2024",
+    "tags": [
+      "iPadOS",
+      "Audio Engine",
+      "Touch"
+    ],
+    "status": "TestFlight",
+    "appLogo": "/assets/selecta/logo.png",
+    "accentColor": "#ff3820",
+    "iconColor": "text-amber-400",
+    "link": "#",
+    "cardImage": "/assets/selecta/banner.png",
+    "bannerImage": "/assets/selecta/banner.png",
+    "gallery": [
+      "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1459749411177-334811adbced?q=80&w=800&auto=format&fit=crop"
+    ]
+  },
+  {
+    "title": "Goblin Adventure",
+    "category": "Game",
+    "description": "Mobile platformer where you roam a vast world as a goblin.",
+    "fullDescription": "Goblin Adventure is a classic side-scrolling platformer reimagined for mobile touchscreens. Players guide a mischievous goblin through 50+ hand-crafted levels filled with traps, enemies, and puzzles. The game features a unique physics-based movement system that makes jumping and dashing feel responsive and weighty.",
+    "features": [
+      "50+ Levels across 3 biomes",
+      "Physics-based controller",
+      "Boss battles",
+      "Dynamic lighting system",
+      "Original chiptune soundtrack"
+    ],
+    "role": "Game Designer & Dev",
+    "year": "2022",
+    "tags": [
+      "Unity",
+      "Mobile",
+      "Platformer"
+    ],
+    "status": "Itch.io",
+    "appLogo": "/assets/goblin/logo.webp",
+    "iconColor": "text-green-500",
+    "link": "#",
+    "cardImage": "/assets/goblin/banner.webp",
+    "bannerImage": "/assets/goblin/banner.webp",
+    "gallery": [
+      "/assets/goblin/1.jpg",
+      "/assets/goblin/2.jpg",
+      "/assets/goblin/3.jpg",
+      "/assets/goblin/4.jpg",
+      "/assets/goblin/5.jpg",
+      "/assets/goblin/6.jpg",
+      "/assets/goblin/7.jpg",
+      "/assets/goblin/8.jpg"
+    ]
+  },
+  {
+    "title": "Skyloon",
+    "category": "Game",
+    "description": "Experimental macOS co-op game using iPhones as JoyCons for ship movement.",
+    "fullDescription": "Skyloon is an experimental local co-op game that pushes the boundaries of cross-device connectivity. The game runs on macOS, but players use their iPhones as motion controllers (JoyCons) to steer a hot air balloon through treacherous skies. It utilizes high-frequency local networking for near-zero latency input.",
+    "features": [
+      "macOS & iOS Local Connectivity",
+      "Accelerometer-based steering",
+      "Co-op survival gameplay",
+      "Custom networking protocol",
+      "Procedural obstacle generation"
+    ],
+    "role": "Project Lead",
+    "team": [
+      {
+        "name": "Bregas S. W.",
+        "role": "Project Lead, Coder"
+      },
+      {
+        "name": "Reza Juliandri",
+        "role": "Coder, UI/UX Designer"
+      },
+      {
+        "name": "Anastasia",
+        "role": "Project Manager"
+      },
+      {
+        "name": "Verdy Kwee",
+        "role": "3D Modeler"
+      }
+    ],
+    "year": "2023",
+    "tags": [
+      "macOS",
+      "Connectivity",
+      "Co-op"
+    ],
+    "status": "Experimental",
+    "appLogo": "/assets/skyloon/logo.png",
+    "iconColor": "text-cyan-400",
+    "link": "#",
+    "cardImage": "/assets/skyloon/banner.png",
+    "bannerImage": "/assets/skyloon/banner.png",
+    "gallery": [
+      "/assets/skyloon/4.png",
+      "/assets/skyloon/5.png",
+      "/assets/skyloon/6.png",
+      "/assets/skyloon/7.png"
+    ]
+  },
+  {
+    "title": "Alchemy Profit",
+    "category": "Game",
+    "description": "Item shop simulation. Manage a potion shop, brew receipts, and maximize profit.",
+    "fullDescription": "In Alchemy Profit, you are the proprietor of a fantasy potion shop. The core gameplay loop involves gathering ingredients, discovering new recipes through trial and error, and managing the economics of supply and demand. As you grow, you can upgrade your brewing equipment and hire staff to automate production.",
+    "features": [
+      "Deep crafting system",
+      "Economic simulation algorithm",
+      "Shop customization",
+      "Customer reputation system",
+      "Day/Night cycle"
+    ],
+    "role": "Solo Developer",
+    "year": "2024",
+    "tags": [
+      "Unity",
+      "Simulation",
+      "Strategy"
+    ],
+    "status": "In Development",
+    "appLogo": "assets/alchemy/logo.png",
+    "iconColor": "text-yellow-400",
+    "link": "#",
+    "cardImage": "assets/alchemy/banner.webp",
+    "bannerImage": "assets/alchemy/banner.webp",
+    "gallery": [
+      "assets/alchemy/1.png",
+      "assets/alchemy/2.png",
+      "assets/alchemy/3.png",
+      "assets/alchemy/4.png",
+      "assets/alchemy/5.png"
+    ]
+  },
+  {
+    "title": "Crafting for Game Creator 1",
+    "category": "Game",
+    "description": "A robust crafting add-on plugin specifically designed for Unity and Game Creator 1.",
+    "fullDescription": "This Unity Asset Store package extends the popular 'Game Creator 1' framework with a complete crafting system. It provides a visual node-based editor for creating recipes, a drag-and-drop UI for crafting benches, and a flexible inventory backend. It has saved hundreds of developers hours of coding time.",
+    "features": [
+      "Visual Recipe Editor",
+      "Drag-and-drop UI components",
+      "Save/Load system integration",
+      "Extensive documentation",
+      "C# Source code included"
+    ],
+    "role": "Tool Developer",
+    "year": "2021",
+    "tags": [
+      "Unity Asset",
+      "Tool",
+      "Plugin"
+    ],
+    "status": "Released on Unity Asset Store",
+    "appLogo": "/assets/crafting/logo.webp",
+    "iconColor": "text-slate-400",
+    "accentColor": "#da9165",
+    "link": "#",
+    "cardImage": "/assets/crafting/banner.png",
+    "bannerImage": "/assets/crafting/banner.png",
+    "gallery": [
+      "/assets/crafting/1.webp",
+      "/assets/crafting/2.webp",
+      "/assets/crafting/3.webp",
+      "/assets/crafting/4.webp",
+      "/assets/crafting/5.webp",
+      "/assets/crafting/6.webp",
+      "/assets/crafting/7.webp",
+      "/assets/crafting/8.webp",
+      "/assets/crafting/9.webp",
+      "/assets/crafting/10.webp"
+    ]
+  }
+]
