@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { 
-  Github, 
-  Linkedin, 
-  Mail, 
-  Smartphone, 
-  Gamepad2, 
-  Code2, 
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Smartphone,
+  Gamepad2,
+  Code2,
 } from "lucide-react";
 
 import { Project } from "@/types";
@@ -38,10 +38,10 @@ const App: React.FC = () => {
     return (
       <div className="min-h-screen bg-[#0a0a0a] flex items-center justify-center">
         <div className="relative">
-           <div className="w-16 h-16 rounded-full border-4 border-emerald-500/30 border-t-emerald-500 animate-spin"></div>
-           <div className="absolute inset-0 flex items-center justify-center">
-             <div className="w-8 h-8 rounded-full bg-emerald-500/20 blur-md animate-pulse"></div>
-           </div>
+          <div className="w-16 h-16 rounded-full border-4 border-emerald-500/30 border-t-emerald-500 animate-spin"></div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-full bg-emerald-500/20 blur-md animate-pulse"></div>
+          </div>
         </div>
       </div>
     );
@@ -54,11 +54,11 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-neutral-200 selection:bg-emerald-500/30 selection:text-emerald-200 font-sans">
-      
+
       {/* Navigation */}
       <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#0a0a0a]/90 backdrop-blur-md border-b border-white/5 py-4 shadow-lg shadow-emerald-900/5' : 'bg-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          <div className="font-bold text-xl tracking-tighter flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo(0,0)}>
+          <div className="font-bold text-xl tracking-tighter flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
             <span className="text-emerald-500">//</span>
             <span className="text-white">BREGAS.ID</span>
           </div>
@@ -89,7 +89,7 @@ const App: React.FC = () => {
               </span>
               Available for hire
             </div>
-            
+
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white leading-[0.9]">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-500 text-glow">
                 Bregas S.
@@ -97,11 +97,11 @@ const App: React.FC = () => {
               <br />
               Wicaksono
             </h1>
-            
+
             <p className="text-xl text-neutral-400 max-w-lg leading-relaxed font-light">
               I'm <strong className="text-white font-medium">Bregas</strong>. A software engineer bridging the gap between high-performance Apple platforms and immersive Unity experiences.
             </p>
-            
+
             <div className="flex flex-wrap gap-4 pt-2">
               <a href="#projects" className="px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full font-medium transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)] hover:-translate-y-1">
                 View Work
@@ -114,20 +114,20 @@ const App: React.FC = () => {
               )}
             </div>
           </div>
-          
+
           {/* Hero Image & Floating Elements */}
           <div className="order-1 md:order-2 relative flex justify-center items-center">
             <div className="relative group">
               {/* Glowing background effect */}
               <div className="absolute -inset-1 bg-gradient-to-tr from-emerald-600 via-teal-500 to-emerald-400 rounded-[2.5rem] blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-700 animate-pulse"></div>
-              
+
               {/* Photo Container */}
               <div className="relative w-72 h-80 md:w-96 md:h-[30rem] bg-neutral-900 rounded-[2rem] border border-white/10 overflow-hidden shadow-2xl">
                 <div className="absolute inset-0 bg-emerald-500/10 mix-blend-overlay z-10 pointer-events-none"></div>
                 {assets && (
-                  <img 
-                    src={assets.profileImage} 
-                    alt="Bregas S. Wicaksono" 
+                  <img
+                    src={assets.profileImage}
+                    alt="Bregas S. Wicaksono"
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                     onError={(e) => {
                       e.currentTarget.src = assets.profileFallback;
@@ -177,9 +177,9 @@ const App: React.FC = () => {
           </h2>
           <div className="glass p-10 md:p-14 rounded-3xl border border-white/5 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none"></div>
-            
+
             <div className="relative z-10 space-y-6">
-               <p className="text-xl text-neutral-300 leading-relaxed">
+              <p className="text-xl text-neutral-300 leading-relaxed">
                 I am a passionate Software Engineer with a deep focus on the Apple ecosystem and interactive media. My journey began with a curiosity for how software interacts with hardware, leading me to specialize in <strong className="text-white">Swift</strong> for iOS and macOS development.
               </p>
               <p className="text-xl text-neutral-300 leading-relaxed">
@@ -197,7 +197,7 @@ const App: React.FC = () => {
             <h2 className="text-4xl font-bold text-white mb-4">Technical Expertise</h2>
             <p className="text-neutral-400 text-lg max-w-2xl mx-auto">A curated list of technologies I use to bring ideas to life.</p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {/* iOS/macOS */}
             <div className="p-8 rounded-3xl border border-white/5 bg-gradient-to-b from-white/[0.03] to-transparent hover:border-emerald-500/20 transition-all duration-500 group">
@@ -264,31 +264,30 @@ const App: React.FC = () => {
               </h2>
               <p className="text-neutral-400 text-lg">A collection of applications and games I've built.</p>
             </div>
-            
+
             {/* Filters */}
             <div className="flex p-1.5 bg-neutral-900 rounded-xl border border-white/5 backdrop-blur-sm self-start md:self-auto">
               {PROJECT_FILTERS.map((category) => (
                 <button
                   key={category}
                   onClick={() => setFilter(category)}
-                  className={`px-8 py-2.5 rounded-lg text-sm font-medium transition-all duration-300 ${
-                    filter === category 
-                      ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-900/50' 
+                  className={`px-8 py-2.5 rounded-lg text-sm font-medium transition-all duration-300 ${filter === category
+                      ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-900/50'
                       : 'text-neutral-400 hover:text-white hover:bg-white/5'
-                  }`}
+                    }`}
                 >
                   {category}s
                 </button>
               ))}
             </div>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-10">
             {filteredProjects.map((project, index) => (
-              <ProjectCard 
+              <ProjectCard
                 key={index}
-                project={project} 
-                onClick={() => setSelectedProject(project)} 
+                project={project}
+                onClick={() => setSelectedProject(project)}
               />
             ))}
           </div>
@@ -305,32 +304,24 @@ const App: React.FC = () => {
           <p className="text-neutral-400 mb-12 max-w-xl mx-auto text-lg leading-relaxed">
             Whether you have a question about Swift, Unity, or just want to discuss the future of tech, I'm always open to a conversation.
           </p>
-          
+
           {socials && (
             <div className="flex justify-center gap-6 mb-20">
               <a href={`mailto:${socials.email}`} className="group p-5 rounded-full bg-neutral-900 text-white hover:bg-emerald-600 hover:text-white transition-all duration-300 border border-white/10 hover:-translate-y-2 hover:shadow-lg hover:shadow-emerald-900/50">
-                <Mail size={24} className="group-hover:scale-110 transition-transform"/>
+                <Mail size={24} className="group-hover:scale-110 transition-transform" />
               </a>
               <a href={socials.github} className="group p-5 rounded-full bg-neutral-900 text-white hover:bg-emerald-600 hover:text-white transition-all duration-300 border border-white/10 hover:-translate-y-2 hover:shadow-lg hover:shadow-emerald-900/50">
-                <Github size={24} className="group-hover:scale-110 transition-transform"/>
+                <Github size={24} className="group-hover:scale-110 transition-transform" />
               </a>
               <a href={socials.linkedin} className="group p-5 rounded-full bg-neutral-900 text-white hover:bg-emerald-600 hover:text-white transition-all duration-300 border border-white/10 hover:-translate-y-2 hover:shadow-lg hover:shadow-emerald-900/50">
-                <Linkedin size={24} className="group-hover:scale-110 transition-transform"/>
+                <Linkedin size={24} className="group-hover:scale-110 transition-transform" />
               </a>
             </div>
           )}
 
           <div className="border-t border-white/5 pt-10 text-neutral-500 text-sm flex flex-col md:flex-row justify-between items-center gap-6">
             <p>&copy; {new Date().getFullYear()} Bregas S. Wicaksono. All rights reserved.</p>
-            <div className="flex items-center gap-6">
-               <p className="flex items-center gap-2">
-                Hosted on <span className="text-white font-medium">Cloudflare</span>
-              </p>
-               <span className="w-1 h-1 rounded-full bg-neutral-700"></span>
-               <p className="flex items-center gap-2">
-                Made with <span className="text-emerald-500">React</span>
-              </p>
-            </div>
+
           </div>
         </div>
       </footer>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   ArrowLeft,
   Calendar,
@@ -6,7 +6,9 @@ import {
   CheckCircle2,
   Layers,
   ExternalLink,
-  Users
+  Users,
+  ChevronRight,
+  ChevronLeft
 } from "lucide-react";
 import { Project } from "@/types";
 
@@ -21,7 +23,32 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack })
     window.scrollTo(0, 0);
   }, []);
 
+  const galleryRef = useRef<HTMLDivElement>(null);
+  const [showRightIndicator, setShowRightIndicator] = useState(false);
+  const [showLeftIndicator, setShowLeftIndicator] = useState(false);
   const accentColor = project.accentColor || '#10b981'; // Default to emerald-500
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    if (galleryRef.current) {
+      galleryRef.current.scrollLeft = 0;
+      checkScroll();
+    }
+  }, [project]);
+
+  const checkScroll = () => {
+    if (galleryRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = galleryRef.current;
+      setShowRightIndicator(scrollLeft + clientWidth < scrollWidth - 10);
+      setShowLeftIndicator(scrollLeft > 10);
+    }
+  };
+
+  useEffect(() => {
+    checkScroll();
+    window.addEventListener('resize', checkScroll);
+    return () => window.removeEventListener('resize', checkScroll);
+  }, [project]);
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] animate-in fade-in slide-in-from-bottom-4 duration-500">
@@ -109,6 +136,55 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack })
         </div>
       </div>
 
+      {/* Gallery Section - Full Width */}
+      {project.gallery && project.gallery.length > 0 && (
+        <div className="w-full py-12 border-b border-white/5 bg-neutral-900/30 relative group/gallery">
+          <div
+            ref={galleryRef}
+            onScroll={checkScroll}
+            className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']"
+            style={{ paddingInline: 'max(1.5rem, calc((100% - 72rem) / 2 + 1.5rem))' }}
+          >
+            {project.gallery.map((img, idx) => (
+              <div key={idx} className="snap-center shrink-0 relative rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 shadow-2xl group">
+                <img
+                  src={img}
+                  alt={`Screenshot ${idx + 1}`}
+                  className="h-[300px] md:h-[400px] w-auto transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Scroll Indicator */}
+          {/* Left Scroll Indicator */}
+          <div
+            className={`absolute left-4 top-1/2 -translate-y-1/2 z-10 transition-opacity duration-300 ${showLeftIndicator ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+          >
+            <button
+              onClick={() => galleryRef.current?.scrollBy({ left: -300, behavior: 'smooth' })}
+              className="p-3 rounded-full bg-neutral-900/80 backdrop-blur-md border border-white/10 text-white shadow-xl hover:bg-neutral-800 transition-colors"
+              style={{ borderColor: `${accentColor}40` }}
+            >
+              <ChevronLeft size={24} style={{ color: accentColor }} />
+            </button>
+          </div>
+
+          {/* Right Scroll Indicator */}
+          <div
+            className={`absolute right-4 top-1/2 -translate-y-1/2 z-10 transition-opacity duration-300 ${showRightIndicator ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+          >
+            <button
+              onClick={() => galleryRef.current?.scrollBy({ left: 300, behavior: 'smooth' })}
+              className="p-3 rounded-full bg-neutral-900/80 backdrop-blur-md border border-white/10 text-white shadow-xl hover:bg-neutral-800 transition-colors"
+              style={{ borderColor: `${accentColor}40` }}
+            >
+              <ChevronRight size={24} style={{ color: accentColor }} />
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Content Grid */}
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-3 gap-12">
@@ -116,22 +192,6 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack })
           {/* Main Content Column */}
           <div className="md:col-span-2 space-y-16">
 
-            {/* Gallery - Moved to Top */}
-            {project.gallery && project.gallery.length > 0 && (
-              <section>
-                <div className="flex gap-5 overflow-x-auto pb-6 snap-x snap-mandatory -mx-6 px-6 md:mx-0 md:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']">
-                  {project.gallery.map((img, idx) => (
-                    <div key={idx} className="snap-center shrink-0 relative rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 shadow-2xl group">
-                      <img
-                        src={img}
-                        alt={`Screenshot ${idx + 1}`}
-                        className="h-[300px] md:h-[400px] w-auto transition-transform duration-500 group-hover:scale-105"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </section>
-            )}
 
             {/* About / Story */}
             <section>
