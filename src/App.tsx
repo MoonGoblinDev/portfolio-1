@@ -6,6 +6,7 @@ import {
   Smartphone,
   Gamepad2,
   Code2,
+  Instagram,
 } from "lucide-react";
 
 import { Project } from "@/types";
@@ -107,10 +108,16 @@ const App: React.FC = () => {
                 View Work
               </a>
               {socials && (
-                <a href={socials.github} target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full text-white hover:text-emerald-400 font-medium transition-all flex items-center gap-2 hover:-translate-y-1">
-                  <Github size={20} />
-                  GitHub
-                </a>
+                <>
+                  <a href={socials.github} target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full text-white hover:text-emerald-400 font-medium transition-all flex items-center gap-2 hover:-translate-y-1">
+                    <Github size={20} />
+                    GitHub
+                  </a>
+                  <a href={socials.instagram} target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full text-white hover:text-emerald-400 font-medium transition-all flex items-center gap-2 hover:-translate-y-1">
+                    <Instagram size={20} />
+                    Instagram
+                  </a>
+                </>
               )}
             </div>
           </div>
@@ -272,8 +279,8 @@ const App: React.FC = () => {
                   key={category}
                   onClick={() => setFilter(category)}
                   className={`px-8 py-2.5 rounded-lg text-sm font-medium transition-all duration-300 ${filter === category
-                      ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-900/50'
-                      : 'text-neutral-400 hover:text-white hover:bg-white/5'
+                    ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-900/50'
+                    : 'text-neutral-400 hover:text-white hover:bg-white/5'
                     }`}
                 >
                   {category}s
@@ -315,6 +322,9 @@ const App: React.FC = () => {
               </a>
               <a href={socials.linkedin} className="group p-5 rounded-full bg-neutral-900 text-white hover:bg-emerald-600 hover:text-white transition-all duration-300 border border-white/10 hover:-translate-y-2 hover:shadow-lg hover:shadow-emerald-900/50">
                 <Linkedin size={24} className="group-hover:scale-110 transition-transform" />
+              </a>
+              <a href={socials.instagram} className="group p-5 rounded-full bg-neutral-900 text-white hover:bg-emerald-600 hover:text-white transition-all duration-300 border border-white/10 hover:-translate-y-2 hover:shadow-lg hover:shadow-emerald-900/50">
+                <Instagram size={24} className="group-hover:scale-110 transition-transform" />
               </a>
             </div>
           )}

@@ -27,6 +27,7 @@ export interface Socials {
   email: string;
   github: string;
   linkedin: string;
+  instagram: string;
 }
 
 export interface Assets {
