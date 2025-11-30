@@ -28,9 +28,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) =>
         <span
           className="px-3 py-1 rounded-full text-xs font-bold border backdrop-blur-md shadow-lg"
           style={{
-            backgroundColor: `${accentColor}20`,
+            backgroundColor: 'rgba(0, 0, 0, 0.7)',
             color: accentColor,
-            borderColor: `${accentColor}30`
+            borderColor: `${accentColor}40`
           }}
         >
           {project.status}

@@ -34,3 +34,13 @@ export interface Assets {
   profileImage: string;
   profileFallback: string;
 }
+
+export interface Badge {
+  id: string;
+  icon: string;
+  label: string;
+  value: string;
+  positionClass: string;
+  colorFrom: string;
+  colorTo: string;
+}

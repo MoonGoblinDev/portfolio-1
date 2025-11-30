@@ -12,6 +12,7 @@ import {
 import { Project } from "@/types";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ProjectDetail } from "@/components/ProjectDetail";
+import { FloatingBadge } from "@/components/FloatingBadge";
 import { usePortfolioData } from "@/hooks/usePortfolioData";
 
 type ProjectFilter = "All" | "App" | "Game";
@@ -22,7 +23,7 @@ const App: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [filter, setFilter] = useState<ProjectFilter>("All");
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-  const { projects, socials, assets, loading } = usePortfolioData();
+  const { projects, socials, assets, badges, loading } = usePortfolioData();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -144,31 +145,14 @@ const App: React.FC = () => {
                 )}
               </div>
 
-              {/* Floating Badge 1: iOS */}
-              <div className="absolute -right-8 top-16 glass p-4 rounded-2xl shadow-2xl border border-white/10 backdrop-blur-xl animate-float">
-                <div className="flex items-center gap-3">
-                  <div className="p-2.5 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl shadow-lg">
-                    <Smartphone className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-neutral-400 font-medium">Expertise</p>
-                    <p className="text-sm font-bold text-white">iOS & macOS</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Floating Badge 2: Unity */}
-              <div className="absolute -left-8 bottom-24 glass p-4 rounded-2xl shadow-2xl border border-white/10 backdrop-blur-xl animate-float-delayed">
-                <div className="flex items-center gap-3">
-                  <div className="p-2.5 bg-neutral-800 rounded-xl shadow-lg border border-white/10">
-                    <Gamepad2 className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-neutral-400 font-medium">Engine</p>
-                    <p className="text-sm font-bold text-white">Unity 3D</p>
-                  </div>
-                </div>
-              </div>
+              {/* Floating Badges */}
+              {badges.map((badge, index) => (
+                <FloatingBadge
+                  key={badge.id}
+                  badge={badge}
+                  delay={index * 2}
+                />
+              ))}
 
             </div>
           </div>
