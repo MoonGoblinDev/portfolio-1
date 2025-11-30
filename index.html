@@ -1,43 +1,100 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bregas S. Wicaksono | Software Engineer</title>
-    <meta name="description" content="Portfolio of Bregas S. Wicaksono, Swift iOS/macOS and Unity Developer." />
-    <link rel="icon" type="image/png" href="/assets/siteLogo.png" />
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-            colors: {
-              emerald: {
-                450: '#10b981', // Custom pop color
-                950: '#022c22', // Deep background
-              }
-            },
-            animation: {
-              'float': 'float 6s ease-in-out infinite',
-              'float-delayed': 'float 6s ease-in-out 3s infinite',
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Bregas Satria Wicaksono - iOS & Unity Developer | bregas.id</title>
+  <meta name="description"
+    content="Official portfolio of Bregas Satria Wicaksono (Bregas). Expert Swift iOS/macOS and Unity Developer. Explore projects and contact Bregas Wicaksono at bregas.id." />
+  <meta name="keywords"
+    content="Bregas Satria Wicaksono, Bregas Wicaksono, Bregas, bregas.id, iOS Developer, Unity Developer, Swift Engineer, Software Engineer" />
+  <meta name="author" content="Bregas Satria Wicaksono" />
+  <link rel="canonical" href="https://bregas.id/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bregas.id/" />
+  <meta property="og:title" content="Bregas Satria Wicaksono - iOS & Unity Developer" />
+  <meta property="og:description"
+    content="Official portfolio of Bregas Satria Wicaksono. Expert Swift iOS/macOS and Unity Developer." />
+  <meta property="og:image" content="https://bregas.id/assets/profile.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://bregas.id/" />
+  <meta property="twitter:title" content="Bregas Satria Wicaksono - iOS & Unity Developer" />
+  <meta property="twitter:description"
+    content="Official portfolio of Bregas Satria Wicaksono. Expert Swift iOS/macOS and Unity Developer." />
+  <meta property="twitter:image" content="https://bregas.id/assets/profile.png" />
+
+  <link rel="icon" type="image/png" href="/assets/siteLogo.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Bregas Satria Wicaksono",
+      "alternateName": ["Bregas Wicaksono", "Bregas"],
+      "url": "https://bregas.id",
+      "image": "https://bregas.id/assets/profile.png",
+      "sameAs": [
+        "https://github.com/MoonGoblinDev",
+        "https://www.linkedin.com/in/bregas-satria-wicaksono/"
+      ],
+      "jobTitle": "Software Engineer",
+      "knowsAbout": ["iOS Development", "Unity", "Swift", "Game Development", "macOS Development"]
+    }
+    </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Bregas Satria Wicaksono Portfolio",
+      "url": "https://bregas.id",
+      "author": {
+        "@type": "Person",
+        "name": "Bregas Satria Wicaksono"
+      }
+    }
+    </script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            emerald: {
+              450: '#10b981', // Custom pop color
+              950: '#022c22', // Deep background
             }
+          },
+          animation: {
+            'float': 'float 6s ease-in-out infinite',
+            'float-delayed': 'float 6s ease-in-out 3s infinite',
           }
         }
       }
-    </script>
+    }
+  </script>
 </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>

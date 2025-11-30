@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bregas.id/sitemap.xml
