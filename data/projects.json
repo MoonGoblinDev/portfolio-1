@@ -1,5 +1,30 @@
 [
   {
+    "title": "Civicomfy",
+    "category": "App",
+    "description": "Civitai model downloader for ComfyUI. Search, download, and organize models directly.",
+    "fullDescription": "Civicomfy seamlessly integrates Civitai's vast model repository directly into ComfyUI, allowing you to search, download, and organize AI models without leaving your workflow. It automates the process of fetching metadata and thumbnails, ensuring a clean and efficient model management system for AI artists.",
+    "features": [
+      "Integrated Model Search",
+      "One-Click Downloads",
+      "Automatic Metadata & Thumbnail Fetching",
+      "Automatic Directory Organization",
+      "Clean UI Integration with ComfyUI"
+    ],
+    "role": "Solo Developer",
+    "year": "2025",
+    "tags": ["ComfyUI", "Python", "AI Tool"],
+    "status": "Released on GitHub",
+    "appLogo": "https://github.com/MoonGoblinDev.png",
+    "iconColor": "text-blue-500",
+    "link": "https://github.com/MoonGoblinDev/Civicomfy",
+    "cardImage": "https://opengraph.githubassets.com/bd92185d0b4727894c00dd212b0ae100be18a8f4227f631788f5aa61c5befedd/MoonGoblinDev/Civicomfy",
+    "bannerImage": "https://opengraph.githubassets.com/bd92185d0b4727894c00dd212b0ae100be18a8f4227f631788f5aa61c5befedd/MoonGoblinDev/Civicomfy",
+    "gallery": [
+      "https://opengraph.githubassets.com/bd92185d0b4727894c00dd212b0ae100be18a8f4227f631788f5aa61c5befedd/MoonGoblinDev/Civicomfy"
+    ]
+  },
+  {
     "title": "Project Ingest",
     "category": "App",
     "description": "Compiles project text into an LLM-friendly format for easier context reading.",
