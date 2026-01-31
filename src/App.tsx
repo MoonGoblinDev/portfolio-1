@@ -114,7 +114,7 @@ const App: React.FC = () => {
                     <Github size={20} />
                     GitHub
                   </a>
-                  <a href="/CV.md" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full text-white hover:text-emerald-400 font-medium transition-all flex items-center gap-2 hover:-translate-y-1">
+                  <a href="/Bregas_Satria_Wicaksono_CV.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full text-white hover:text-emerald-400 font-medium transition-all flex items-center gap-2 hover:-translate-y-1">
                     <FileText size={20} />
                     View CV
                   </a>
@@ -307,7 +307,7 @@ const App: React.FC = () => {
               <a href={socials.linkedin} className="group p-5 rounded-full bg-neutral-900 text-white hover:bg-emerald-600 hover:text-white transition-all duration-300 border border-white/10 hover:-translate-y-2 hover:shadow-lg hover:shadow-emerald-900/50">
                 <Linkedin size={24} className="group-hover:scale-110 transition-transform" />
               </a>
-              <a href="/CV.md" className="group p-5 rounded-full bg-neutral-900 text-white hover:bg-emerald-600 hover:text-white transition-all duration-300 border border-white/10 hover:-translate-y-2 hover:shadow-lg hover:shadow-emerald-900/50">
+              <a href="/Bregas_Satria_Wicaksono_CV.pdf" target="_blank" rel="noopener noreferrer" className="group p-5 rounded-full bg-neutral-900 text-white hover:bg-emerald-600 hover:text-white transition-all duration-300 border border-white/10 hover:-translate-y-2 hover:shadow-lg hover:shadow-emerald-900/50">
                 <FileText size={24} className="group-hover:scale-110 transition-transform" />
               </a>
             </div>
