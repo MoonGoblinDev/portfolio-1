@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Defau banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05070c" />
+      <stop offset="0.55" stop-color="#0b1220" />
+      <stop offset="1" stop-color="#08162b" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#60a5fa" />
+      <stop offset="1" stop-color="#22d3ee" />
+    </linearGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="28" />
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <circle cx="360" cy="260" r="220" fill="url(#accent)" opacity="0.18" filter="url(#blur)" />
+  <circle cx="1260" cy="640" r="320" fill="url(#accent)" opacity="0.12" filter="url(#blur)" />
+
+  <g fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="2">
+    <path d="M180 640c180-140 360-210 540-210s360 70 540 210" />
+    <path d="M220 700c200-150 400-225 600-225s400 75 600 225" opacity="0.6" />
+  </g>
+
+  <g transform="translate(150 170)">
+    <rect x="0" y="0" width="124" height="124" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.10)" />
+    <text x="62" y="86" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" font-weight="700" fill="url(#accent)">D</text>
+  </g>
+
+  <text x="150" y="380" font-family="Arial, sans-serif" font-size="74" font-weight="800" fill="#ffffff">Defau</text>
+  <text x="150" y="440" font-family="Arial, sans-serif" font-size="28" fill="rgba(255,255,255,0.75)">Default apps, monitored and rule-driven.</text>
+
+  <g transform="translate(150 500)" fill="rgba(255,255,255,0.85)" font-family="Arial, sans-serif" font-size="22">
+    <text y="0">• View and change default file handlers (LaunchServices/UTType)</text>
+    <text y="38">• Folder-based routing rules to open files in specific apps</text>
+    <text y="76">• History + monitoring for external default changes</text>
+  </g>
+</svg>
