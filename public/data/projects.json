@@ -25,6 +25,58 @@
     ]
   },
   {
+    "title": "MacDirect",
+    "category": "App",
+    "description": "A macOS app + updater framework to build, notarize, distribute, and self-update apps (Sparkle alternative).",
+    "fullDescription": "MacDirect is a macOS distribution tool and updater framework that streamlines the full release pipeline. The app automates archiving/exporting, code signing, notarization/stapling, and packaging (DMG/ZIP/PKG). It generates an updates.json feed with checksums and optional delta patches, and can publish artifacts via GitHub Releases or S3/R2. The embedded updater framework checks the feed, verifies Team ID signatures, and installs updates safely via a helper app for sandboxed contexts.",
+    "features": [
+      "Archive/export & packaging pipeline (DMG/ZIP/PKG)",
+      "Template-based DMG designer (backgrounds + icon layout)",
+      "Automated notarization + stapling (notarytool)",
+      "Update feed generator (updates.json) with checksums/deltas",
+      "Secure updater framework (Team ID verification + helper)"
+    ],
+    "role": "Solo Developer",
+    "year": "2025",
+    "tags": ["macOS", "Swift", "SwiftUI", "Notarization", "Updater"],
+    "status": "In Development",
+    "appLogo": "/assets/macdirect/logo.svg",
+    "accentColor": "#f59e0b",
+    "iconColor": "text-amber-400",
+    "link": "#",
+    "cardImage": "/assets/macdirect/banner.svg",
+    "bannerImage": "/assets/macdirect/banner.svg",
+    "gallery": [
+      "/assets/macdirect/banner.svg"
+    ]
+  },
+  {
+    "title": "Defau",
+    "category": "App",
+    "description": "macOS utility to view, monitor, and manage default apps with per-folder routing rules.",
+    "fullDescription": "Defau is a macOS utility that surfaces a searchable list of file types (UTType/extensions) and their current default handlers. It enables one-click changes via LaunchServices and adds a rule engine to route file opens based on folder context. Defau monitors default handlers over time, logs external changes, and includes safety warnings for system-critical file associations.",
+    "features": [
+      "Searchable file types and default handlers",
+      "One-click default app changes (LaunchServices)",
+      "Folder-based routing rules for specific apps",
+      "Monitoring + history log for external changes",
+      "Safety warnings for critical system types"
+    ],
+    "role": "Solo Developer",
+    "year": "2025",
+    "tags": ["macOS", "Swift", "SwiftUI", "LaunchServices", "UTType"],
+    "status": "In Development",
+    "appLogo": "/assets/defau/logo.svg",
+    "accentColor": "#60a5fa",
+    "iconColor": "text-blue-400",
+    "link": "#",
+    "cardImage": "/assets/defau/banner.svg",
+    "bannerImage": "/assets/defau/banner.svg",
+    "gallery": [
+      "/assets/defau/banner.svg"
+    ]
+  },
+  {
     "title": "Project Ingest",
     "category": "App",
     "description": "Compiles project text into an LLM-friendly format for easier context reading.",

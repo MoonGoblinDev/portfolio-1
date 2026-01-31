@@ -136,7 +136,7 @@ const htmlContent = `
 
     <div class="job">
       <div class="job-header">
-        <span>iOS Developer (Project-Based) | Apple Developer Academy @BINUS</span>
+        <span>iOS Developer (Project-Based) | Apple Developer Academy @Bali</span>
         <span>03/2025 – 12/2025</span>
       </div>
       <div class="job-sub">Bali, Indonesia</div>
@@ -156,7 +156,7 @@ const htmlContent = `
       </div>
       <div class="job-sub">Indonesia</div>
       <ul>
-        <li>Built and shipped games/tools in Unity with an emphasis on responsive feel, performance, and clear UX for creators.</li>
+        <li>Built and shipped games/tools in Unity with an emphasis on fun, responsive feel, performance, and clear UX for creators.</li>
         <li><span class="label">Crafting for Game Creator:</span> published a node-based crafting editor on the Unity Asset Store (workflow automation for indie devs).</li>
         <li><span class="label">Goblin Adventure:</span> implemented a physics-based mobile platformer controller and level systems for 50+ handcrafted stages.</li>
         <li><span class="label">Alchemy Profit:</span> developed a simulation-driven economy loop for a shop-management game.</li>
@@ -184,6 +184,29 @@ const htmlContent = `
     </div>
 
     <h2>Projects</h2>
+
+    <div class="project">
+      <div class="job-header">
+        <span>MacDirect (macOS)</span>
+        <span>2025</span>
+      </div>
+      <div class="job-sub">Distribution app + updater framework (Sparkle alternative)</div>
+      <ul>
+        <li>Automates build/sign/notarize + packaging (DMG/ZIP/PKG), generates an update feed (updates.json), and installs updates securely via Team ID verification and a helper app.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="job-header">
+        <span>Defau (macOS)</span>
+        <span>2025</span>
+      </div>
+      <div class="job-sub">Default apps manager with monitoring + folder routing rules</div>
+      <ul>
+        <li>Uses LaunchServices/UTType to manage default handlers, adds per-folder rules to route file opens, and logs external changes with safety warnings for critical associations.</li>
+      </ul>
+    </div>
+
     <div class="project">
       <div class="job-header">
         <span>Civicomfy</span>

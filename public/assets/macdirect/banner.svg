@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="MacDirect banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0703" />
+      <stop offset="0.55" stop-color="#1b0f06" />
+      <stop offset="1" stop-color="#120a04" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f59e0b" />
+      <stop offset="1" stop-color="#fb7185" />
+    </linearGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="28" />
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <circle cx="420" cy="280" r="240" fill="url(#accent)" opacity="0.16" filter="url(#blur)" />
+  <circle cx="1220" cy="620" r="340" fill="url(#accent)" opacity="0.12" filter="url(#blur)" />
+
+  <g fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="2">
+    <path d="M210 620c110-120 240-180 390-180s280 60 390 180" />
+    <path d="M860 620c110-120 240-180 390-180s280 60 390 180" opacity="0.55" />
+  </g>
+
+  <g transform="translate(150 170)">
+    <rect x="0" y="0" width="124" height="124" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.10)" />
+    <text x="62" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="800" fill="url(#accent)">MD</text>
+  </g>
+
+  <text x="150" y="380" font-family="Arial, sans-serif" font-size="74" font-weight="800" fill="#ffffff">MacDirect</text>
+  <text x="150" y="440" font-family="Arial, sans-serif" font-size="28" fill="rgba(255,255,255,0.75)">Build, notarize, distribute, and update macOS apps (Sparkle alternative).</text>
+
+  <g transform="translate(150 500)" fill="rgba(255,255,255,0.85)" font-family="Arial, sans-serif" font-size="22">
+    <text y="0">• Packaging pipeline: archive/export, DMG/ZIP/PKG</text>
+    <text y="38">• Automated notarization + stapling; GitHub/S3 uploads</text>
+    <text y="76">• Secure updater framework with Team ID verification + helper</text>
+  </g>
+</svg>
