@@ -1,57 +1,59 @@
-### BREGAS SATRIA WICAKSONO
-**Apple Developer Academy @BINUS - Bali Graduate | Indie Game Developer**
+# BREGAS SATRIA WICAKSONO
+Product Engineer (iOS, Android, Desktop, & Web)
 
-Email: bregas.sat1@gmail.com | Portfolio: [bregas.id](https://bregas.id)
-GitHub: [MoonGoblinDev](https://github.com/MoonGoblinDev) | LinkedIn: [bregas-satria-wicaksono](https://www.linkedin.com/in/bregas-satria-wicaksono/)
-Location: Indonesia
+Indonesia | bregas.sat1@gmail.com | https://bregas.id
+LinkedIn: https://www.linkedin.com/in/bregas-satria-wicaksono/ | GitHub: https://github.com/MoonGoblinDev
 
----
-
-## PROFESSIONAL SUMMARY
-Software Engineer, Full-Stack Developer, and Game Developer with 4+ years of experience as an tech engineer. Recently graduated from the Apple Developer Academy @BINUS and currently spearheading **Ainotra**, a cross-platform app suites for reading, writing, localizing e-book. Specialized in high-performance application architecture, AI integration, and bridging the gap between mobile, desktop and web. Passionate about bringing creative ideas to life through production-ready code and innovative tech exploration.
+## SUMMARY
+Product-minded engineer who designs and ships end-to-end experiences across Apple platforms and modern web/desktop. Apple Developer Academy @Bali graduate and founder of Ainotra (cross-platform reading ecosystem). Strong in Swift/SwiftUI, React/TypeScript, Unity C#, cross-device connectivity, and AI-agents.
+## SKILLS
+- Product: Design thinking process, rapid prototyping, UX/UI iteration, information architecture, interaction design, accessibility-minded UI
+- Apple: Swift, SwiftUI, UIKit, AppKit, Combine, Core Data
+- Web/Desktop: React, TypeScript, TanStack Router/Query, Vite, Tailwind CSS, Tauri, Electron, Capacitor
+- Backend/Cloud: Cloudflare Workers, Hono, Firebase, REST APIs, auth/OAuth flows, email/webhooks
+- Tools: Git, CI/CD, Xcode, Unity, Wrangler, Bun
 
 ## EXPERIENCE
 
-### Founder & Lead Full-Stack Engineer | Ainotra | Indonesia
-**01/2024 – Present**
-*   **Ainotra Reader:** Architected a high-performance, cross-platform ai e-book reader (Web, Android, iOS, Desktop) using **React**, **Tauri**, **Electron**, and **Capacitor**.
+### Founder & Product Engineer | Ainotra | Indonesia
+**01/2025 – Present**
+- Built and shipped a cross-platform reading product (Web, Android, iOS, Desktop) with a focus on fast iteration and polished UX.
+- Engineered an offline-first library and reading experience using React + TypeScript, local persistence, and sync-friendly data modeling.
+- Implemented cross-platform authentication + deep-link flows across desktop and mobile runtimes (Electron/Tauri/Capacitor).
+- Designed and implemented serverless APIs (Cloudflare Workers + Hono) and product integrations (payments, email, AI features).
 
-### iOS Developer | Apple Developer Academy | Bali, Indonesia
+### iOS Developer (Project-Based) | Apple Developer Academy @BINUS | Bali, Indonesia
 **03/2025 – 12/2025**
-*   **Nada (iOS, iPad, MacOS):** Engineered a real-time Audio-to-MIDI conversion tool using advanced DSP. Managed pitch correction and low-latency export for professional DAWs.
-*   **Selecta (iPadOS):** Developed a professional DJ simulation engine with custom audio synchronization and waveform visualization.
-*   **Trawl (iOS):** Architected a localized fishing forecast system integrating real-time weather and solunar data.
+- Shipped multiple product prototypes end-to-end (define scope, build, iterate with feedback, demo and deliver).
+- Nada (iOS/iPadOS/macOS): built a real-time Audio-to-MIDI pipeline using DSP concepts; optimized latency and export for DAW workflows.
+- Selecta (iPadOS): implemented a touch-first DJ experience with waveform visualization, tempo sync, and audio engine integration.
+- Skyloon (macOS/iOS/watchOS): prototyped cross-device local multiplayer input (iPhone/Apple Watch as motion controllers) with low-latency networking.
+- Trawl (iOS): built a location-aware fishing companion using weather + solunar data, offline usability, and a digital catch log.
 
-### Unity Developer | MoonGoblin | Indonesia
+### Independent Unity Developer | MoonGoblin | Indonesia
 **07/2021 – 03/2025**
-*   **Alchemy Profit:** Developed a deep economic simulation engine for a fantasy shop management game.
-*   **Goblin Adventure:** Engineered a physics-based platforming system for a mobile title with over 50 hand-crafted levels.
-*   **Crafting for Game Creator:** Published a robust visual node-based editor for the Unity Asset Store, used by hundreds of independent developers.
+- Built and shipped games/tools in Unity with an emphasis on responsive feel, performance, and clear UX for creators.
+- Crafting for Game Creator: published a node-based crafting editor on the Unity Asset Store (workflow automation for indie devs).
+- Goblin Adventure: implemented a physics-based mobile platformer controller and level systems for 50+ handcrafted stages.
+- Alchemy Profit: developed a simulation-driven economy loop for a shop-management game.
 
-### Business Government Enterprise Service Intern | Telkom Indonesia
+### Business Government Enterprise Service Intern | Telkom Indonesia | Jember, Indonesia
 **07/2021 – 08/2021**
-*   Managed client acquisition strategies and professional interaction protocols.
-*   Organized and processed complex client data sets for enterprise-level service entry.
-*   Conducted field visits to facilitate high-level client relations and needs analysis.
+- Supported enterprise client operations: data entry/validation, client coordination, and field visit preparation.
 
 ## EDUCATION
 
-### Apple Developer Academy | Indonesia
-**01/2025 – 12/2025**
-*   *Graduate Program specializing in iOS/macOS Development, Design, and Professional Business Skills.*
-
-### Bachelor of Management | Telkom University
+### Telkom University
+Bachelor of Management (Business Administration and Management)
 **01/2018 – 12/2022**
-*   *Business Administration and Management, General.*
 
-## TECHNICAL SKILLS
-*   **Platforms:** iOS, macOS, iPadOS, Android, Web, Desktop (Electron, Tauri).
-*   **Languages:** Swift, C#, C++, SQL, TypeScript, JavaScript (Bun/Node).
-*   **Frameworks:** SwiftUI, UIKit, AppKit, React 19, Hono, Capacitor, Tailwind CSS.
-*   **State & Routing:** TanStack Router, TanStack Query, Zustand, Redux, Dexie (IndexedDB).
-*   **Infrastructure:** Cloudflare Workers, Firebase, Google Drive API, OpenAI API, OpenAI, REST APIs.
-*   **Tools:** Xcode, Unity Engine, Git, CI/CD, Vite, Bun, Wrangler.
+## PROJECTS
 
-## PROJECTS (Selected)
-*   **Project Ingest (macOS):** LLM context aggregation tool released on the Mac App Store.
-*   **Skyloon (macOS/iOS):** Experimental cross-device local networking survival game using iPhones as motion controllers.
+### Civicomfy
+Civitai model downloader for ComfyUI.
+https://github.com/MoonGoblinDev/Civicomfy
+- Integrated model search + one-click downloads, with automatic metadata/thumbnails and directory organization.
+
+### Project Ingest (macOS)
+LLM context aggregation utility (released on the Mac App Store).
+- Scans codebases while respecting .gitignore and produces an LLM-friendly export with token estimation.

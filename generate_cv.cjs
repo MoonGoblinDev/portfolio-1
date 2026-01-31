@@ -1,237 +1,228 @@
-const nodeHtmlToImage = require('html-pdf-node');
-const fs = require('fs');
+const nodeHtmlToPdf = require("html-pdf-node");
+const fs = require("fs");
 
 const htmlContent = `
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bregas Satria Wicaksono CV</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            font-size: 11pt;
-        }
-        h1 {
-            font-size: 24pt;
-            margin-bottom: 5px;
-            text-transform: uppercase;
-            color: #000;
-        }
-        h2 {
-            font-size: 14pt;
-            border-bottom: 2px solid #000;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            color: #000;
-        }
-        h3 {
-            font-size: 12pt;
-            margin-top: 15px;
-            margin-bottom: 5px;
-            color: #000;
-        }
-        .subtitle {
-            font-weight: bold;
-            font-size: 11pt;
-            margin-bottom: 10px;
-            color: #555;
-        }
-        .contact-info {
-            margin-bottom: 20px;
-            font-size: 10pt;
-        }
-        .contact-info a {
-            color: #333;
-            text-decoration: none;
-        }
-        section {
-            margin-bottom: 10px;
-        }
-        .experience-item, .education-item {
-            margin-bottom: 15px;
-            page-break-inside: avoid;
-        }
-        h2 {
-            font-size: 14pt;
-            border-bottom: 2px solid #000;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            color: #000;
-            page-break-after: avoid;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 10.5pt;
+        line-height: 1.35;
+        color: #111;
+        margin: 0;
+        padding: 0;
+      }
 
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            font-weight: bold;
-        }
-        .job-title {
-            font-style: italic;
-        }
-        ul {
-            margin-top: 5px;
-            margin-bottom: 5px;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 3px;
-        }
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-        .skill-category {
-            font-weight: bold;
-        }
+      a {
+        color: #111;
+        text-decoration: none;
+      }
+
+      p {
+        margin: 0 0 6px 0;
+      }
+
+      h1 {
+        font-size: 22pt;
+        margin: 0 0 4px 0;
+        text-transform: uppercase;
+        color: #000;
+      }
+
+      .headline {
+        font-weight: 700;
+        font-size: 11pt;
+        margin: 0 0 10px 0;
+        color: #333;
+      }
+
+      .contact {
+        font-size: 9.5pt;
+        margin: 0 0 14px 0;
+        color: #333;
+      }
+
+      h2 {
+        font-size: 12pt;
+        border-bottom: 1.5px solid #000;
+        margin: 12px 0 6px 0;
+        padding-bottom: 3px;
+        text-transform: uppercase;
+        color: #000;
+        page-break-after: avoid;
+      }
+
+      .job,
+      .project {
+        margin: 0 0 10px 0;
+        page-break-inside: avoid;
+      }
+
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        font-weight: 700;
+      }
+
+      .job-sub {
+        margin-top: 2px;
+        font-size: 9.5pt;
+        color: #444;
+      }
+
+      ul {
+        margin: 4px 0 0 18px;
+        padding: 0;
+      }
+
+      li {
+        margin: 0 0 2px 0;
+      }
+
+      .label {
+        font-weight: 700;
+      }
+
+      .skills-line {
+        margin: 0 0 2px 0;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>BREGAS SATRIA WICAKSONO</h1>
-    <div class="subtitle">Apple Developer Academy @BINUS - Bali Graduate | Indie Game Developer</div>
-    
-    <div class="contact-info">
-        Email: bregas.sat1@gmail.com | Portfolio: <a href="https://bregas.id">bregas.id</a><br>
-        GitHub: <a href="https://github.com/MoonGoblinDev">MoonGoblinDev</a> | LinkedIn: <a href="https://www.linkedin.com/in/bregas-satria-wicaksono/">bregas-satria-wicaksono</a><br>
-        Location: Indonesia
+    <div class="headline">Product Engineer (iOS, Android, Desktop, & Web)</div>
+    <div class="contact">
+      Indonesia · <a href="mailto:bregas.sat1@gmail.com">bregas.sat1@gmail.com</a> ·
+      <a href="https://bregas.id">bregas.id</a> ·
+      <a href="https://www.linkedin.com/in/bregas-satria-wicaksono/">LinkedIn</a> ·
+      <a href="https://github.com/MoonGoblinDev">GitHub</a>
     </div>
 
-    <section>
-        <h2>PROFESSIONAL SUMMARY</h2>
-        <p>
-            Software Engineer, Full-Stack Developer, and Game Developer with 4+ years of experience as a tech engineer. Recently graduated from the Apple Developer Academy @BINUS and currently spearheading <strong>Ainotra</strong>, a cross-platform app suite for reading, writing, and localizing e-books. Specialized in high-performance application architecture, AI integration, and bridging the gap between mobile, desktop, and web. Passionate about bringing creative ideas to life through production-ready code and innovative tech exploration.
-        </p>
-    </section>
+    <h2>Summary</h2>
+    <p>
+      Product-minded engineer who designs and ships end-to-end experiences across Apple platforms, Android and modern web/desktop.
+      Apple Developer Academy @Bali graduate and founder of Ainotra. Strong in
+      Swift/SwiftUI, React/TypeScript, Unity C#, cross-device connectivity, and AI-agents.
+    </p>
 
-    <section>
-        <h2>EXPERIENCE</h2>
+    <h2>Skills</h2>
+    <div class="skills-line"><span class="label">Product:</span> Design thinking process, rapid prototyping, UX/UI iteration, information architecture, interaction design, accessibility-minded UI</div>
+    <div class="skills-line"><span class="label">Apple:</span> Swift, SwiftUI, UIKit, AppKit, Combine, Core Data</div>
+    <div class="skills-line"><span class="label">Web/Desktop:</span> React, TypeScript, TanStack Router/Query, Vite, Tailwind CSS, Tauri, Electron, Capacitor</div>
+    <div class="skills-line"><span class="label">Backend/Cloud:</span> Cloudflare Workers, Hono, Firebase, REST APIs, auth/OAuth flows, email/webhooks</div>
+    <div class="skills-line"><span class="label">Tools:</span> Git, CI/CD, Xcode, Unity, Wrangler, Bun</div>
 
-        <div class="experience-item">
-            <div class="job-header">
-                <span>Founder & Lead Full-Stack Engineer | Ainotra</span>
-                <span>01/2024 – Present</span>
-            </div>
-            <ul>
-                <li><strong>Ainotra Reader:</strong> Architected a high-performance, cross-platform AI e-book reader (Web, Android, iOS, Desktop) using React, Tauri, Electron, and Capacitor.</li>
-            </ul>
-        </div>
+    <h2>Experience</h2>
 
-        <div class="experience-item">
-            <div class="job-header">
-                <span>iOS Developer | Apple Developer Academy</span>
-                <span>03/2025 – 12/2025</span>
-            </div>
-            <div class="subtitle" style="font-weight: normal; font-size: 10pt;">Bali, Indonesia</div>
-            <ul>
-                <li><strong>Nada (iOS, iPad, MacOS):</strong> Engineered a real-time Audio-to-MIDI conversion tool using advanced DSP. Managed pitch correction and low-latency export for professional DAWs.</li>
-                <li><strong>Selecta (iPadOS):</strong> Developed a professional DJ simulation engine with custom audio synchronization and waveform visualization.</li>
-                <li><strong>Skyloon (macOS/iOS/watchOS):</strong> Engineered an experimental survival game using cross-device local networking (iPhone/Apple Watch as motion controllers).</li>
-                <li><strong>Trawl (iOS):</strong> Architected a localized fishing forecast system integrating real-time weather and solunar data.</li>
-            </ul>
-        </div>
+    <div class="job">
+      <div class="job-header">
+        <span>Founder & Product Engineer | Ainotra</span>
+        <span>01/2025 – Present</span>
+      </div>
+      <div class="job-sub">Indonesia</div>
+      <ul>
+        <li>Built and shipped a cross-platform reading product (Web, Android, iOS, Desktop) with a focus on fast iteration and polished UX.</li>
+        <li>Engineered an offline-first library and reading experience using React + TypeScript, local persistence, and sync-friendly data modeling.</li>
+        <li>Implemented cross-platform authentication + deep-link flows across desktop and mobile runtimes (Electron/Tauri/Capacitor).</li>
+        <li>Designed and implemented serverless APIs (Cloudflare Workers + Hono) and product integrations (payments, email, AI features).</li>
+      </ul>
+    </div>
 
-        <div class="experience-item">
-            <div class="job-header">
-                <span>Unity Developer | MoonGoblin</span>
-                <span>07/2021 – 03/2025</span>
-            </div>
-            <div class="subtitle" style="font-weight: normal; font-size: 10pt;">Indonesia</div>
-            <ul>
-                <li><strong>Alchemy Profit:</strong> Developed a deep economic simulation engine for a fantasy shop management game.</li>
-                <li><strong>Goblin Adventure:</strong> Engineered a physics-based platforming system for a mobile title with over 50 hand-crafted levels.</li>
-                <li><strong>Crafting for Game Creator:</strong> Published a robust visual node-based editor for the Unity Asset Store, used by hundreds of independent developers.</li>
-            </ul>
-        </div>
+    <div class="job">
+      <div class="job-header">
+        <span>iOS Developer (Project-Based) | Apple Developer Academy @BINUS</span>
+        <span>03/2025 – 12/2025</span>
+      </div>
+      <div class="job-sub">Bali, Indonesia</div>
+      <ul>
+        <li>Shipped multiple product prototypes end-to-end (define scope, build, iterate with feedback, demo and deliver).</li>
+        <li><span class="label">Nada (iOS/iPadOS/macOS):</span> built a real-time Audio-to-MIDI pipeline using DSP concepts; optimized latency and export for DAW workflows.</li>
+        <li><span class="label">Selecta (iPadOS):</span> implemented a touch-first DJ experience with waveform visualization, tempo sync, and audio engine integration.</li>
+        <li><span class="label">Skyloon (macOS/iOS/watchOS):</span> prototyped cross-device local multiplayer input (iPhone/Apple Watch as motion controllers) with low-latency networking.</li>
+        <li><span class="label">Trawl (iOS):</span> built a location-aware fishing companion using weather + solunar data, offline usability, and a digital catch log.</li>
+      </ul>
+    </div>
 
-        <div class="experience-item">
-            <div class="job-header">
-                <span>Business Government Enterprise Service Intern | Telkom Indonesia</span>
-                <span>07/2021 – 08/2021</span>
-            </div>
-            <ul>
-                <li>Managed client acquisition strategies and professional interaction protocols.</li>
-                <li>Organized and processed complex client data sets for enterprise-level service entry.</li>
-                <li>Conducted field visits to facilitate high-level client relations and needs analysis.</li>
-            </ul>
-        </div>
-    </section>
+    <div class="job">
+      <div class="job-header">
+        <span>Independent Unity Developer | MoonGoblin</span>
+        <span>07/2021 – 03/2025</span>
+      </div>
+      <div class="job-sub">Indonesia</div>
+      <ul>
+        <li>Built and shipped games/tools in Unity with an emphasis on responsive feel, performance, and clear UX for creators.</li>
+        <li><span class="label">Crafting for Game Creator:</span> published a node-based crafting editor on the Unity Asset Store (workflow automation for indie devs).</li>
+        <li><span class="label">Goblin Adventure:</span> implemented a physics-based mobile platformer controller and level systems for 50+ handcrafted stages.</li>
+        <li><span class="label">Alchemy Profit:</span> developed a simulation-driven economy loop for a shop-management game.</li>
+      </ul>
+    </div>
 
-    <section>
-        <h2>EDUCATION</h2>
+    <div class="job">
+      <div class="job-header">
+        <span>Business Government Enterprise Service Intern | Telkom Indonesia</span>
+        <span>07/2021 – 08/2021</span>
+      </div>
+      <div class="job-sub">Jember, Indonesia</div>
+      <ul>
+        <li>Supported enterprise client operations: data entry/validation, client coordination, and field visit preparation.</li>
+      </ul>
+    </div>
 
-        <div class="experience-item">
-            <div class="job-header">
-                <span>Apple Developer Academy</span>
-                <span>01/2025 – 12/2025</span>
-            </div>
-            <div class="subtitle" style="font-weight: normal; font-size: 10pt;">Indonesia</div>
-            <p style="margin-top: 5px;">Graduate Program specializing in iOS/macOS Development, Design, and Professional Business Skills.</p>
-        </div>
+    <h2>Education</h2>
+    <div class="job">
+      <div class="job-header">
+        <span>Telkom University — Bachelor of Management</span>
+        <span>01/2018 – 12/2022</span>
+      </div>
+      <div class="job-sub">Business Administration and Management</div>
+    </div>
 
-        <div class="experience-item">
-            <div class="job-header">
-                <span>Bachelor of Management | Telkom University</span>
-                <span>01/2018 – 12/2022</span>
-            </div>
-            <p style="margin-top: 5px;">Business Administration and Management, General.</p>
-        </div>
-    </section>
+    <h2>Projects</h2>
+    <div class="project">
+      <div class="job-header">
+        <span>Civicomfy</span>
+        <span>2025</span>
+      </div>
+      <div class="job-sub"><a href="https://github.com/MoonGoblinDev/Civicomfy">github.com/MoonGoblinDev/Civicomfy</a></div>
+      <ul>
+        <li>Integrated model search + one-click downloads for ComfyUI, with automatic metadata/thumbnails and directory organization.</li>
+      </ul>
+    </div>
 
-    <section>
-        <h2>TECHNICAL SKILLS</h2>
-        <div class="skills-grid">
-            <div>
-                <span class="skill-category">Platforms:</span> iOS, macOS, iPadOS, Android, Web, Desktop (Electron, Tauri)
-            </div>
-            <div>
-                <span class="skill-category">Languages:</span> Swift, C#, C++, SQL, TypeScript, JavaScript (Bun/Node)
-            </div>
-            <div>
-                <span class="skill-category">Frameworks:</span> SwiftUI, UIKit, AppKit, React 19, Hono, Capacitor, Tailwind CSS
-            </div>
-            <div>
-                <span class="skill-category">State & Routing:</span> TanStack Router, TanStack Query, Zustand, Redux, Dexie (IndexedDB)
-            </div>
-            <div>
-                <span class="skill-category">Infrastructure:</span> Cloudflare Workers, Firebase, Google Drive API, OpenAI API
-            </div>
-            <div>
-                <span class="skill-category">Tools:</span> Xcode, Unity Engine, Git, CI/CD, Vite, Bun, Wrangler
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>PROJECTS (Selected)</h2>
-        <ul>
-            <li><strong>Civicomfy:</strong> Integrated model downloader for ComfyUI, enabling seamless search and organization of Civitai models with automated metadata and thumbnail management.</li>
-            <li><strong>Project Ingest (macOS):</strong> LLM context aggregation tool released on the Mac App Store.</li>
-        </ul>
-    </section>
-</body>
+    <div class="project">
+      <div class="job-header">
+        <span>Project Ingest (macOS)</span>
+        <span>2023</span>
+      </div>
+      <ul>
+        <li>LLM context aggregation utility released on the Mac App Store; scans codebases while respecting .gitignore and exports an LLM-friendly bundle with token estimation.</li>
+      </ul>
+    </div>
+  </body>
 </html>
 `;
 
-let options = { 
-  format: 'A4',
+let options = {
+  format: "A4",
+  printBackground: true,
   margin: {
-    top: '60px',
-    bottom: '60px',
-    left: '60px',
-    right: '60px'
-  }
+    top: "56px",
+    bottom: "56px",
+    left: "56px",
+    right: "56px",
+  },
 };
 let file = { content: htmlContent };
 
-nodeHtmlToImage.generatePdf(file, options).then(pdfBuffer => {
-  fs.writeFileSync('./public/Bregas_Satria_Wicaksono_CV.pdf', pdfBuffer);
-  console.log("PDF generated successfully at ./public/Bregas_Satria_Wicaksono_CV.pdf");
+nodeHtmlToPdf.generatePdf(file, options).then((pdfBuffer) => {
+  fs.writeFileSync("./public/Bregas_Satria_Wicaksono_CV.pdf", pdfBuffer);
+  console.log(
+    "PDF generated successfully at ./public/Bregas_Satria_Wicaksono_CV.pdf",
+  );
 });
