@@ -13,11 +13,7 @@
     ],
     "role": "Solo Developer",
     "year": "2023",
-    "tags": [
-      "macOS",
-      "Swift",
-      "LLM Tool"
-    ],
+    "tags": ["macOS", "Swift", "LLM Tool"],
     "status": "Released on App Store",
     "appLogo": "/assets/project-ingest/logo.png",
     "iconColor": "text-emerald-400",
@@ -50,20 +46,16 @@
         "role": "Lead Engineer"
       },
       {
-        "name": "Alex Riviera",
+        "name": "M. Fariz Abdillah",
         "role": "UI/UX Designer"
       },
       {
-        "name": "Sarah Chen",
+        "name": "Ariefadli Ardianto",
         "role": "Backend Dev"
       }
     ],
     "year": "2024",
-    "tags": [
-      "iOS",
-      "CoreLocation",
-      "Social"
-    ],
+    "tags": ["iOS", "CoreLocation", "Social"],
     "status": "Released on App Store",
     "appLogo": "/assets/trawl/logo.png",
     "accentColor": "#2afff5",
@@ -105,16 +97,12 @@
         "role": "UI/UX Designer"
       },
       {
-        "name": "Erwin",
+        "name": "Erwin Surya",
         "role": "Project Manager"
       }
     ],
     "year": "2025",
-    "tags": [
-      "iOS",
-      "Audio AI",
-      "Music"
-    ],
+    "tags": ["iOS", "Audio AI", "Music"],
     "status": "Released on App Store",
     "appLogo": "/assets/nada/logo.png",
     "accentColor": "#ef4a23",
@@ -141,13 +129,36 @@
       "BPM detection & Sync",
       "MIDI controller support"
     ],
-    "role": "Developer",
-    "year": "2024",
-    "tags": [
-      "iPadOS",
-      "Audio Engine",
-      "Touch"
+    "role": "Lead Engineer",
+    "role": "Lead Engineer",
+    "team": [
+      {
+        "name": "Bregas S.",
+        "role": "Lead Engineer"
+      },
+      {
+        "name": "M. Fariz Abdillah",
+        "role": "Lead Researcher"
+      },
+      {
+        "name": "Ariefadli Ardianto",
+        "role": "Backend Dev"
+      },
+      {
+        "name": "Rasyad Wahyu",
+        "role": "UI/UX Designer"
+      },
+      {
+        "name": "Endricho Abidnego",
+        "role": "AI/ML Engineer"
+      },
+      {
+        "name": "Aditya Ramadhan",
+        "role": "Project Manager"
+      }
     ],
+    "year": "2024",
+    "tags": ["iPadOS", "Audio Engine", "Touch"],
     "status": "TestFlight",
     "appLogo": "/assets/selecta/logo.png",
     "accentColor": "#ff3820",
@@ -166,7 +177,7 @@
     "description": "Mobile platformer where you roam a vast world as a goblin.",
     "fullDescription": "Goblin Adventure is a classic side-scrolling platformer reimagined for mobile touchscreens. Players guide a mischievous goblin through 50+ hand-crafted levels filled with traps, enemies, and puzzles. The game features a unique physics-based movement system that makes jumping and dashing feel responsive and weighty.",
     "features": [
-      "50+ Levels across 3 biomes",
+      "3D Mobile Platformer",
       "Physics-based controller",
       "Boss battles",
       "Dynamic lighting system",
@@ -174,11 +185,7 @@
     ],
     "role": "Game Designer & Dev",
     "year": "2022",
-    "tags": [
-      "Unity",
-      "Mobile",
-      "Platformer"
-    ],
+    "tags": ["Unity", "Mobile", "Platformer"],
     "status": "Itch.io",
     "appLogo": "/assets/goblin/logo.webp",
     "iconColor": "text-green-500",
@@ -228,11 +235,7 @@
       }
     ],
     "year": "2023",
-    "tags": [
-      "macOS",
-      "Connectivity",
-      "Co-op"
-    ],
+    "tags": ["macOS", "Connectivity", "Co-op"],
     "status": "Experimental",
     "appLogo": "/assets/skyloon/logo.png",
     "iconColor": "text-cyan-400",
@@ -260,11 +263,7 @@
     ],
     "role": "Solo Developer",
     "year": "2024",
-    "tags": [
-      "Unity",
-      "Simulation",
-      "Strategy"
-    ],
+    "tags": ["Unity", "Simulation", "Strategy"],
     "status": "In Development",
     "appLogo": "assets/alchemy/logo.png",
     "iconColor": "text-yellow-400",
@@ -293,11 +292,7 @@
     ],
     "role": "Tool Developer",
     "year": "2021",
-    "tags": [
-      "Unity Asset",
-      "Tool",
-      "Plugin"
-    ],
+    "tags": ["Unity Asset", "Tool", "Plugin"],
     "status": "Released on Unity Asset Store",
     "appLogo": "/assets/crafting/logo.webp",
     "iconColor": "text-slate-400",
