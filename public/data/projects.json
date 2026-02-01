@@ -134,12 +134,40 @@
     "appLogo": "/assets/selecta/logo.png",
     "accentColor": "#ff3820",
     "iconColor": "text-amber-400",
-    "link": "#",
+    "link": "https://testflight.apple.com/join/Jy9w6E3A",
     "cardImage": "/assets/selecta/banner.png",
     "bannerImage": "/assets/selecta/banner.png",
     "gallery": [
       "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1459749411177-334811adbced?q=80&w=800&auto=format&fit=crop"
+    ]
+  },
+  {
+    "title": "Project Ingest",
+    "category": "App",
+    "description": "Compiles project text into an LLM-friendly format for easier context reading.",
+    "fullDescription": "Project Ingest solves the headache of feeding codebase context to Large Language Models. It recursively scans your directory, respecting .gitignore rules, and aggregates code files into a single, formatted text output. This allows developers to quickly copy their entire project context into ChatGPT or Claude for better code analysis and debugging.",
+    "features": [
+      "Respects .gitignore automatically",
+      "Customizable file extension filtering",
+      "One-click copy to clipboard",
+      "Token count estimation",
+      "Native macOS performance"
+    ],
+    "role": "Solo Developer",
+    "year": "2023",
+    "tags": ["macOS", "Swift", "LLM Tool"],
+    "status": "Released on App Store",
+    "appLogo": "/assets/project-ingest/logo.png",
+    "iconColor": "text-emerald-400",
+    "accentColor": "#ad8bff",
+    "link": "https://apps.apple.com/id/app/project-ingest/id6748257094?mt=12",
+    "cardImage": "/assets/project-ingest/1.webp",
+    "bannerImage": "/assets/project-ingest/1.webp",
+    "gallery": [
+      "/assets/project-ingest/1.webp",
+      "/assets/project-ingest/2.webp",
+      "/assets/project-ingest/3.webp"
     ]
   },
   {
@@ -184,8 +212,8 @@
     "tags": ["macOS", "Swift", "SwiftUI", "Notarization", "Updater"],
     "status": "In Development",
     "appLogo": "/assets/macdirect/logo.png",
-    "accentColor": "#f59e0b",
-    "iconColor": "text-amber-400",
+    "accentColor": "#60a5fa",
+    "iconColor": "text-blue-400",
     "link": "#",
     "cardImage": "/assets/macdirect/banner.svg",
     "bannerImage": "/assets/macdirect/banner.svg",
@@ -214,34 +242,6 @@
     "cardImage": "/assets/defau/banner.svg",
     "bannerImage": "/assets/defau/banner.svg",
     "gallery": ["/assets/defau/banner.svg"]
-  },
-  {
-    "title": "Project Ingest",
-    "category": "App",
-    "description": "Compiles project text into an LLM-friendly format for easier context reading.",
-    "fullDescription": "Project Ingest solves the headache of feeding codebase context to Large Language Models. It recursively scans your directory, respecting .gitignore rules, and aggregates code files into a single, formatted text output. This allows developers to quickly copy their entire project context into ChatGPT or Claude for better code analysis and debugging.",
-    "features": [
-      "Respects .gitignore automatically",
-      "Customizable file extension filtering",
-      "One-click copy to clipboard",
-      "Token count estimation",
-      "Native macOS performance"
-    ],
-    "role": "Solo Developer",
-    "year": "2023",
-    "tags": ["macOS", "Swift", "LLM Tool"],
-    "status": "Released on App Store",
-    "appLogo": "/assets/project-ingest/logo.png",
-    "iconColor": "text-emerald-400",
-    "accentColor": "#ad8bff",
-    "link": "https://apps.apple.com/id/app/project-ingest/id6748257094?mt=12",
-    "cardImage": "/assets/project-ingest/1.webp",
-    "bannerImage": "/assets/project-ingest/1.webp",
-    "gallery": [
-      "/assets/project-ingest/1.webp",
-      "/assets/project-ingest/2.webp",
-      "/assets/project-ingest/3.webp"
-    ]
   },
   {
     "title": "Goblin Adventure",
