@@ -102,7 +102,6 @@
       "MIDI controller support"
     ],
     "role": "Lead Engineer",
-    "role": "Lead Engineer",
     "team": [
       {
         "name": "Bregas S.",
@@ -235,8 +234,7 @@
     "appLogo": "/assets/project-ingest/logo.png",
     "iconColor": "text-emerald-400",
     "accentColor": "#ad8bff",
-    "link": "https://apps.apple.com/id/app/project-ingest/id6748257094?mt=12
-    Project Ingest",
+    "link": "https://apps.apple.com/id/app/project-ingest/id6748257094?mt=12",
     "cardImage": "/assets/project-ingest/1.webp",
     "bannerImage": "/assets/project-ingest/1.webp",
     "gallery": [
