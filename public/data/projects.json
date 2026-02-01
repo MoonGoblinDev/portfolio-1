@@ -1,153 +1,5 @@
 [
   {
-    "title": "Civicomfy",
-    "category": "App",
-    "description": "Civitai model downloader for ComfyUI. Search, download, and organize models directly.",
-    "fullDescription": "Civicomfy seamlessly integrates Civitai's vast model repository directly into ComfyUI, allowing you to search, download, and organize AI models without leaving your workflow. It automates the process of fetching metadata and thumbnails, ensuring a clean and efficient model management system for AI artists.",
-    "features": [
-      "Integrated Model Search",
-      "One-Click Downloads",
-      "Automatic Metadata & Thumbnail Fetching",
-      "Automatic Directory Organization",
-      "Clean UI Integration with ComfyUI"
-    ],
-    "role": "Solo Developer",
-    "year": "2025",
-    "tags": ["ComfyUI", "Python", "AI Tool"],
-    "status": "Released on GitHub",
-    "appLogo": "https://github.com/MoonGoblinDev.png",
-    "iconColor": "text-blue-500",
-    "link": "https://github.com/MoonGoblinDev/Civicomfy",
-    "cardImage": "https://opengraph.githubassets.com/bd92185d0b4727894c00dd212b0ae100be18a8f4227f631788f5aa61c5befedd/MoonGoblinDev/Civicomfy",
-    "bannerImage": "https://opengraph.githubassets.com/bd92185d0b4727894c00dd212b0ae100be18a8f4227f631788f5aa61c5befedd/MoonGoblinDev/Civicomfy",
-    "gallery": [
-      "https://opengraph.githubassets.com/bd92185d0b4727894c00dd212b0ae100be18a8f4227f631788f5aa61c5befedd/MoonGoblinDev/Civicomfy"
-    ]
-  },
-  {
-    "title": "MacDirect",
-    "category": "App",
-    "description": "A macOS app + updater framework to build, notarize, distribute, and self-update apps (Sparkle alternative).",
-    "fullDescription": "MacDirect is a macOS distribution tool and updater framework that streamlines the full release pipeline. The app automates archiving/exporting, code signing, notarization/stapling, and packaging (DMG/ZIP/PKG). It generates an updates.json feed with checksums and optional delta patches, and can publish artifacts via GitHub Releases or S3/R2. The embedded updater framework checks the feed, verifies Team ID signatures, and installs updates safely via a helper app for sandboxed contexts.",
-    "features": [
-      "Archive/export & packaging pipeline (DMG/ZIP/PKG)",
-      "Template-based DMG designer (backgrounds + icon layout)",
-      "Automated notarization + stapling (notarytool)",
-      "Update feed generator (updates.json) with checksums/deltas",
-      "Secure updater framework (Team ID verification + helper)"
-    ],
-    "role": "Solo Developer",
-    "year": "2025",
-    "tags": ["macOS", "Swift", "SwiftUI", "Notarization", "Updater"],
-    "status": "In Development",
-    "appLogo": "/assets/macdirect/logo.svg",
-    "accentColor": "#f59e0b",
-    "iconColor": "text-amber-400",
-    "link": "#",
-    "cardImage": "/assets/macdirect/banner.svg",
-    "bannerImage": "/assets/macdirect/banner.svg",
-    "gallery": [
-      "/assets/macdirect/banner.svg"
-    ]
-  },
-  {
-    "title": "Defau",
-    "category": "App",
-    "description": "macOS utility to view, monitor, and manage default apps with per-folder routing rules.",
-    "fullDescription": "Defau is a macOS utility that surfaces a searchable list of file types (UTType/extensions) and their current default handlers. It enables one-click changes via LaunchServices and adds a rule engine to route file opens based on folder context. Defau monitors default handlers over time, logs external changes, and includes safety warnings for system-critical file associations.",
-    "features": [
-      "Searchable file types and default handlers",
-      "One-click default app changes (LaunchServices)",
-      "Folder-based routing rules for specific apps",
-      "Monitoring + history log for external changes",
-      "Safety warnings for critical system types"
-    ],
-    "role": "Solo Developer",
-    "year": "2025",
-    "tags": ["macOS", "Swift", "SwiftUI", "LaunchServices", "UTType"],
-    "status": "In Development",
-    "appLogo": "/assets/defau/logo.svg",
-    "accentColor": "#60a5fa",
-    "iconColor": "text-blue-400",
-    "link": "#",
-    "cardImage": "/assets/defau/banner.svg",
-    "bannerImage": "/assets/defau/banner.svg",
-    "gallery": [
-      "/assets/defau/banner.svg"
-    ]
-  },
-  {
-    "title": "Project Ingest",
-    "category": "App",
-    "description": "Compiles project text into an LLM-friendly format for easier context reading.",
-    "fullDescription": "Project Ingest solves the headache of feeding codebase context to Large Language Models. It recursively scans your directory, respecting .gitignore rules, and aggregates code files into a single, formatted text output. This allows developers to quickly copy their entire project context into ChatGPT or Claude for better code analysis and debugging.",
-    "features": [
-      "Respects .gitignore automatically",
-      "Customizable file extension filtering",
-      "One-click copy to clipboard",
-      "Token count estimation",
-      "Native macOS performance"
-    ],
-    "role": "Solo Developer",
-    "year": "2023",
-    "tags": ["macOS", "Swift", "LLM Tool"],
-    "status": "Released on App Store",
-    "appLogo": "/assets/project-ingest/logo.png",
-    "iconColor": "text-emerald-400",
-    "accentColor": "#ad8bff",
-    "link": "#",
-    "cardImage": "/assets/project-ingest/1.webp",
-    "bannerImage": "/assets/project-ingest/1.webp",
-    "gallery": [
-      "/assets/project-ingest/1.webp",
-      "/assets/project-ingest/2.webp",
-      "/assets/project-ingest/3.webp"
-    ]
-  },
-  {
-    "title": "Trawl",
-    "category": "App",
-    "description": "Fishing companion app. Forecasts conditions, logs catches to your aquarium, and shares with friends.",
-    "fullDescription": "Trawl is the ultimate companion for the modern angler. By combining real-time weather data with solunar theory, it predicts the best fishing times for your specific location. Beyond forecasting, Trawl acts as a digital logbook, allowing you to capture photos of your catch, record species data, and visualize your fishing history in a beautiful virtual aquarium.",
-    "features": [
-      "Solunar fishing forecasts",
-      "Real-time weather & tide data",
-      "Virtual Aquarium catch log",
-      "Social sharing features",
-      "Offline mode support"
-    ],
-    "role": "Lead Engineer",
-    "team": [
-      {
-        "name": "Bregas S.",
-        "role": "Lead Engineer"
-      },
-      {
-        "name": "M. Fariz Abdillah",
-        "role": "UI/UX Designer"
-      },
-      {
-        "name": "Ariefadli Ardianto",
-        "role": "Backend Dev"
-      }
-    ],
-    "year": "2024",
-    "tags": ["iOS", "CoreLocation", "Social"],
-    "status": "Released on App Store",
-    "appLogo": "/assets/trawl/logo.png",
-    "accentColor": "#2afff5",
-    "iconColor": "text-blue-400",
-    "link": "#",
-    "cardImage": "/assets/trawl/banner.png",
-    "bannerImage": "/assets/trawl/banner.png",
-    "gallery": [
-      "/assets/trawl/4.png",
-      "/assets/trawl/1.png",
-      "/assets/trawl/2.png",
-      "/assets/trawl/3.png"
-    ]
-  },
-  {
     "title": "Nada",
     "category": "App",
     "description": "Rapid music composing. Hum a melody and instantly convert your voice into MIDI notes.",
@@ -184,7 +36,7 @@
     "appLogo": "/assets/nada/logo.png",
     "accentColor": "#ef4a23",
     "iconColor": "text-purple-400",
-    "link": "#",
+    "link": "https://apps.apple.com/us/app/nada-compose-with-hum/id6755638816",
     "cardImage": "/assets/nada/banner.png",
     "bannerImage": "/assets/nada/banner.png",
     "gallery": [
@@ -192,6 +44,49 @@
       "/assets/nada/2.png",
       "/assets/nada/3.png",
       "/assets/nada/4.png"
+    ]
+  },
+  {
+    "title": "Trawl",
+    "category": "App",
+    "description": "Fishing companion app. Forecasts conditions, logs catches to your aquarium, and shares with friends.",
+    "fullDescription": "Trawl is the ultimate companion for the modern angler. By combining real-time weather data with solunar theory, it predicts the best fishing times for your specific location. Beyond forecasting, Trawl acts as a digital logbook, allowing you to capture photos of your catch, record species data, and visualize your fishing history in a beautiful virtual aquarium.",
+    "features": [
+      "Solunar fishing forecasts",
+      "Real-time weather & tide data",
+      "Virtual Aquarium catch log",
+      "Social sharing features",
+      "Offline mode support"
+    ],
+    "role": "Lead Engineer",
+    "team": [
+      {
+        "name": "Bregas S.",
+        "role": "Lead Engineer"
+      },
+      {
+        "name": "M. Fariz Abdillah",
+        "role": "UI/UX Designer"
+      },
+      {
+        "name": "Ariefadli Ardianto",
+        "role": "Backend Dev"
+      }
+    ],
+    "year": "2024",
+    "tags": ["iOS", "CoreLocation", "Social"],
+    "status": "Released on App Store",
+    "appLogo": "/assets/trawl/logo.png",
+    "accentColor": "#2afff5",
+    "iconColor": "text-blue-400",
+    "link": "https://apps.apple.com/id/app/trawl-fishing-companion/id6748068820?l=id",
+    "cardImage": "/assets/trawl/banner.png",
+    "bannerImage": "/assets/trawl/banner.png",
+    "gallery": [
+      "/assets/trawl/4.png",
+      "/assets/trawl/1.png",
+      "/assets/trawl/2.png",
+      "/assets/trawl/3.png"
     ]
   },
   {
@@ -246,6 +141,108 @@
     "gallery": [
       "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1459749411177-334811adbced?q=80&w=800&auto=format&fit=crop"
+    ]
+  },
+  {
+    "title": "Civicomfy",
+    "category": "App",
+    "description": "Civitai model downloader for ComfyUI. Search, download, and organize models directly.",
+    "fullDescription": "Civicomfy seamlessly integrates Civitai's vast model repository directly into ComfyUI, allowing you to search, download, and organize AI models without leaving your workflow. It automates the process of fetching metadata and thumbnails, ensuring a clean and efficient model management system for AI artists.",
+    "features": [
+      "Integrated Model Search",
+      "One-Click Downloads",
+      "Automatic Metadata & Thumbnail Fetching",
+      "Automatic Directory Organization",
+      "Clean UI Integration with ComfyUI"
+    ],
+    "role": "Solo Developer",
+    "year": "2025",
+    "tags": ["ComfyUI", "Python", "AI Tool"],
+    "status": "Released on GitHub",
+    "appLogo": "https://github.com/MoonGoblinDev.png",
+    "iconColor": "text-blue-500",
+    "link": "https://github.com/MoonGoblinDev/Civicomfy",
+    "cardImage": "https://opengraph.githubassets.com/bd92185d0b4727894c00dd212b0ae100be18a8f4227f631788f5aa61c5befedd/MoonGoblinDev/Civicomfy",
+    "bannerImage": "https://opengraph.githubassets.com/bd92185d0b4727894c00dd212b0ae100be18a8f4227f631788f5aa61c5befedd/MoonGoblinDev/Civicomfy",
+    "gallery": [
+      "https://opengraph.githubassets.com/bd92185d0b4727894c00dd212b0ae100be18a8f4227f631788f5aa61c5befedd/MoonGoblinDev/Civicomfy"
+    ]
+  },
+  {
+    "title": "MacDirect",
+    "category": "App",
+    "description": "A macOS app + updater framework to build, notarize, distribute, and self-update apps (Sparkle alternative).",
+    "fullDescription": "MacDirect is a macOS distribution tool and updater framework that streamlines the full release pipeline. The app automates archiving/exporting, code signing, notarization/stapling, and packaging (DMG/ZIP/PKG). It generates an updates.json feed with checksums and optional delta patches, and can publish artifacts via GitHub Releases or S3/R2. The embedded updater framework checks the feed, verifies Team ID signatures, and installs updates safely via a helper app for sandboxed contexts.",
+    "features": [
+      "Archive/export & packaging pipeline (DMG/ZIP/PKG)",
+      "Template-based DMG designer (backgrounds + icon layout)",
+      "Automated notarization + stapling (notarytool)",
+      "Update feed generator (updates.json) with checksums/deltas",
+      "Secure updater framework (Team ID verification + helper)"
+    ],
+    "role": "Solo Developer",
+    "year": "2025",
+    "tags": ["macOS", "Swift", "SwiftUI", "Notarization", "Updater"],
+    "status": "In Development",
+    "appLogo": "/assets/macdirect/logo.png",
+    "accentColor": "#f59e0b",
+    "iconColor": "text-amber-400",
+    "link": "#",
+    "cardImage": "/assets/macdirect/banner.svg",
+    "bannerImage": "/assets/macdirect/banner.svg",
+    "gallery": ["/assets/macdirect/banner.svg"]
+  },
+  {
+    "title": "Defau",
+    "category": "App",
+    "description": "macOS utility to view, monitor, and manage default apps with per-folder routing rules.",
+    "fullDescription": "Defau is a macOS utility that surfaces a searchable list of file types (UTType/extensions) and their current default handlers. It enables one-click changes via LaunchServices and adds a rule engine to route file opens based on folder context. Defau monitors default handlers over time, logs external changes, and includes safety warnings for system-critical file associations.",
+    "features": [
+      "Searchable file types and default handlers",
+      "One-click default app changes (LaunchServices)",
+      "Folder-based routing rules for specific apps",
+      "Monitoring + history log for external changes",
+      "Safety warnings for critical system types"
+    ],
+    "role": "Solo Developer",
+    "year": "2025",
+    "tags": ["macOS", "Swift", "SwiftUI", "LaunchServices", "UTType"],
+    "status": "In Development",
+    "appLogo": "/assets/defau/logo.png",
+    "accentColor": "#60a5fa",
+    "iconColor": "text-blue-400",
+    "link": "#",
+    "cardImage": "/assets/defau/banner.svg",
+    "bannerImage": "/assets/defau/banner.svg",
+    "gallery": ["/assets/defau/banner.svg"]
+  },
+  {
+    "title": "Project Ingest",
+    "category": "App",
+    "description": "Compiles project text into an LLM-friendly format for easier context reading.",
+    "fullDescription": "Project Ingest solves the headache of feeding codebase context to Large Language Models. It recursively scans your directory, respecting .gitignore rules, and aggregates code files into a single, formatted text output. This allows developers to quickly copy their entire project context into ChatGPT or Claude for better code analysis and debugging.",
+    "features": [
+      "Respects .gitignore automatically",
+      "Customizable file extension filtering",
+      "One-click copy to clipboard",
+      "Token count estimation",
+      "Native macOS performance"
+    ],
+    "role": "Solo Developer",
+    "year": "2023",
+    "tags": ["macOS", "Swift", "LLM Tool"],
+    "status": "Released on App Store",
+    "appLogo": "/assets/project-ingest/logo.png",
+    "iconColor": "text-emerald-400",
+    "accentColor": "#ad8bff",
+    "link": "https://apps.apple.com/id/app/project-ingest/id6748257094?mt=12
+    Project Ingest",
+    "cardImage": "/assets/project-ingest/1.webp",
+    "bannerImage": "/assets/project-ingest/1.webp",
+    "gallery": [
+      "/assets/project-ingest/1.webp",
+      "/assets/project-ingest/2.webp",
+      "/assets/project-ingest/3.webp"
     ]
   },
   {
